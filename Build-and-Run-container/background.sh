@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cat <<< EOF > main.go
+cat << EOF > main.go
 ackage main
 
 import "fmt"
