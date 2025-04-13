@@ -13,8 +13,7 @@ COPY main.go main.go
 RUN go build -o /bin/hello ./main.go
 
 FROM scratch
-#copy from previous stage
-COPY --from=0 /bin/hello /bin/hello
+COPY --from=0 /bin/hello /bin/hello #copy from previos stag
 CMD ["/bin/hello"]
 ```{{copy}}
 
@@ -23,7 +22,7 @@ Build Docker image:
 docker build -t hello-go-multi-stage:v0.1 step2/
 ```{{copy}}
 
-Compare newly created Image and compare the size between normal build and multi-stages build. You will cleary see the size different between using multi-stage and normal build
+Compare newly created Image and compare the size between normal build and multi-stages build
 ```
 docker images | grep hello-go
 ```{{copy}}
