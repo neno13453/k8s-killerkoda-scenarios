@@ -10,9 +10,9 @@ kubectl get po
 Then, try to fix the issue accordingly
 
 Hint
-<!-- INTERACTIVE exec START -->
+<!-- INTERACTIVE copy START -->
 
 ```bash
 echo 'Hello, world!'
 ```
-<!-- INTERACTIVE exec END -->
+<!-- INTERACTIVE copy END -->
