@@ -7,7 +7,13 @@
     },
     "steps": [
       {
+        "title": "Build Docker Image",
         "text": "step1.md",
+        "verify": "verify.sh"
+      },
+      {
+        "title": "Build Multi-Stages Docker Image",
+        "text": "step2.md",
         "verify": "verify.sh"
       }
     ],
