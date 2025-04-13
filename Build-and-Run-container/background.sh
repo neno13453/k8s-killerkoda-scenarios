@@ -1,7 +1,7 @@
 #!/bin/bash
 
 cat << EOF > main.go
-ackage main
+package main
 
 import "fmt"
 
