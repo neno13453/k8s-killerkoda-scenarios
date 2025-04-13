@@ -16,7 +16,7 @@ CMD ["/bin/hello"]
 
 Build Docker image:
 ``` 
-docker build -t hello-go:v0.1 ~/Dockerfile
+docker build -t hello-go:v0.1 .
 ```{{copy}}
 
 Checking newly created image

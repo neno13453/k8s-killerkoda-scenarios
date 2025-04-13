@@ -19,7 +19,7 @@ CMD ["/bin/hello"]
 
 Build Docker image:
 ``` 
-docker build -t hello-go-multi-stage:v0.1 ~/Dockerfile
+docker build -t hello-go-multi-stage:v0.1 .
 ```{{copy}}
 
 Checking newly created image
