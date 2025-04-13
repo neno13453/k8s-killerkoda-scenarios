@@ -27,3 +27,8 @@ Checking newly created image
 docker images | grep hello-go
 ```{{copy}}
 
+### Copy multiline code block
+```
+uname -r
+pwd
+```{{copy}}
