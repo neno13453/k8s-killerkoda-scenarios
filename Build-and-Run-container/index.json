@@ -2,6 +2,9 @@
   "title": "Docker Image",
   "description": "Build and Run container",
   "details": {
+    "intro": {
+      "background": "background.sh"
+    },
     "steps": [
       {
         "title": "Build Docker Image",
@@ -14,12 +17,7 @@
         "verify": "verify2.sh"
       }
 
-    ],
-    "assets": {
-      "host01": [
-        {"file": "main.go", "target": "~/", "chmod": "+w"}
-      ]
-    }
+    ]
   },
   "backend": {
     "imageid": "ubuntu"
