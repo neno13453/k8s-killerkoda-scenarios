@@ -1,13 +1,13 @@
 {
-  "title": "Deployment Resource",
-  "description": "Using and configuring deployment",
+  "title": "Troubleshooting",
+  "description": "Troubleshooting different type of issue on deployment",
   "details": {
     "intro": {
       "background": "background.sh"
     },
     "steps": [
       {
-        "title": "Build Docker Image",
+        "title": "Fix crashing pod",
         "text": "step1.md",
         "verify": "verify1.sh"
       },
