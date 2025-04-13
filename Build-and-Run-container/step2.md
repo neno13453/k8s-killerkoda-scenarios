@@ -22,13 +22,7 @@ Build Docker image:
 docker build -t hello-go-multi-stage:v0.1 .
 ```{{copy}}
 
-Checking newly created image
-```
-docker images | grep hello-go-multi-stage
-```{{copy}}
-
-Compare Image size and number of VA between normal build and multi-stages build
+Compare newly created Image and compare the size between normal build and multi-stages build
 ```
 docker images | grep hello-go
-trivy
 ```{{copy}}
