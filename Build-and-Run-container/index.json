@@ -2,9 +2,6 @@
   "title": "Docker Image",
   "description": "Build and Run container",
   "details": {
-    "intro": {
-      "text": "intro.md"
-    },
     "steps": [
       {
         "title": "Build Docker Image",
