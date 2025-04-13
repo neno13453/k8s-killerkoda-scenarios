@@ -3,15 +3,19 @@
   "description": "Build and Run container",
   "details": {
     "intro": {
-      "text": "intro.md",
-      "foreground": "foreground.sh"
+      "text": "intro.md"
     },
     "steps": [
       {
         "text": "step1.md",
         "verify": "verify.sh"
       }
-    ]
+    ],
+    "assets": {
+      "host01": [
+        {"file": "main.go", "target": "~/", "chmod": "+w"},
+      ]
+    }
   },
   "backend": {
     "imageid": "ubuntu"
