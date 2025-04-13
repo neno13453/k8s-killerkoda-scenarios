@@ -9,7 +9,7 @@ Create a new file `~/step2/Dockerfile` to build a container image from.
 ```
 FROM golang:1.23
 WORKDIR /src
-COPY main.go main.go
+COPY ~/main.go main.go
 RUN go build -o /bin/hello ./main.go
 
 FROM scratch
@@ -19,7 +19,7 @@ CMD ["/bin/hello"]
 
 Build Docker image:
 ``` 
-docker build -t hello-go-multi-stage:v0.1 .
+docker build -t hello-go-multi-stage:v0.1 step2/
 ```{{copy}}
 
 Compare newly created Image and compare the size between normal build and multi-stages build
