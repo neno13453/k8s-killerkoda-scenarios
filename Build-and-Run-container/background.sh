@@ -1,4 +1,5 @@
 #!/bin/bash
+mkdir step1 step2
 
 cat << EOF > main.go
 package main

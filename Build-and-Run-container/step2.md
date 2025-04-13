@@ -4,7 +4,7 @@
 > In Accenture laptop, "Docker" is not allow due to licensing. Therefore, you need to replace "docker" with "podman" command. Though, all of the command are exactly the same
 
 
-Create a new file `~/Dockerfile` to build a container image from.
+Create a new file `~/step2/Dockerfile` to build a container image from.
 
 ```
 FROM golang:1.23
