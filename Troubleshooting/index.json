@@ -1,13 +1,13 @@
 {
-  "title": "Troubleshooting",
-  "description": "Troubleshooting different type of issue on deployment",
+  "title": "Events and Troubleshooting",
+  "description": "",
   "details": {
     "intro": {
       "background": "background.sh"
     },
     "steps": [
       {
-        "title": "Fix crashing pod",
+        "title": "Troubleshooting different type of issue on deployment",
         "text": "step1.md",
         "verify": "verify1.sh"
       },
