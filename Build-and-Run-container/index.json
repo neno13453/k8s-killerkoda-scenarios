@@ -3,11 +3,13 @@
   "description": "Build and Run container",
   "details": {
     "intro": {
-      "text": "intro.md"
+      "text": "intro.md",
+      "foreground": "foreground.sh"
     },
     "steps": [
       {
-        "text": "step1.md"
+        "text": "step1.md",
+        "verify": "verify.sh"
       }
     ]
   },

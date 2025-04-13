@@ -4,27 +4,26 @@
 > In Accenture laptop, "Docker" is not allow due to licensing. Therefore, you need to replace "docker" with "podman" command. Though, all of the command are exactly the same
 
 
-Create a new file `/tmp/Dockerfile` to build a container image from.
+Create a new file `~/Dockerfile` to build a container image from.
 
 ```
-# syntax=docker/dockerfile:1
 FROM golang:1.23
 WORKDIR /src
-COPY <<EOF ./main.go
-package main
-
-import "fmt"
-
-func main() {
-  fmt.Println("hello, world")
-}
-EOF
+COPY main.go main.go
 RUN go build -o /bin/hello ./main.go
+
+#FROM scratch
+#COPY --from=0 /bin/hello /bin/hello
+CMD ["/bin/hello"]
 ```
 
 Build Docker image:
-``` docker build -t imageName:tagName /tmp/Dockerfile```
+``` 
+docker build -t hello-go:v0.1 ~/Dockerfile
+```
 
 Checking newly created image
-``` docker images```
+```
+docker images | grep hello-go
+```
 
