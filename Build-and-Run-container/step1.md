@@ -9,7 +9,7 @@ Create a new file `~/step1/Dockerfile` to build a container image from.
 ```
 FROM golang:1.23
 WORKDIR /src
-COPY ~/main.go main.go
+COPY main.go main.go
 RUN go build -o /bin/hello ./main.go
 CMD ["/bin/hello"]
 ```{{copy}}
