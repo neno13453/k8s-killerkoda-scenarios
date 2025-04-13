@@ -6,8 +6,14 @@
       {
         "title": "Build Docker Image",
         "text": "step1.md",
-        "verify": "verify.sh"
+        "verify": "verify1.sh"
+      },
+      {
+        "title": "Build Multi-Stages Docker Image",
+        "text": "step2.md",
+        "verify": "verify2.sh"
       }
+
     ],
     "assets": {
       "host01": [

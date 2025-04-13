@@ -26,3 +26,9 @@ Checking newly created image
 ```
 docker images | grep hello-go-multi-stage
 ```{{copy}}
+
+Compare Image size and number of VA between normal build and multi-stages build
+```
+docker images | grep hello-go
+trivy
+```{{copy}}
