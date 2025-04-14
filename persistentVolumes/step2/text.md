@@ -5,12 +5,15 @@ Create a `PersistentVolumeClaim` named `my-claim` that requests a volume of size
 Make sure after creating the claim it shows up as `Bound`. If not, check to make sure the claim parameters match the volume.
 
 <br>
+<details><summary>Hint:</summary>
+<br>
+A good starting point: https://kubernetes.io/docs/tasks/configure-pod-container/configure-persistent-volume-storage/#create-a-persistentvolumeclaim
+</details>
+
+<br>
 <details><summary>Solution</summary>
 <br>
-Again, it's useful to start with K8s doc examples when kubectl doesn't have a create option. 
-
-A good starting point: https://kubernetes.io/docs/tasks/configure-pod-container/configure-persistent-volume-storage/#create-a-persistentvolumeclaim
-
+Execute below command to create PersistentVolumeClaim(PVC)
 ```plain
 kubectl apply -f - <<EOF
 
@@ -27,6 +30,11 @@ spec:
       storage: 100Mi #changed
 
 EOF
-```{{exec}}
+```{{copy}}
+<br>
+Make sure that PVC is in `Bound` status
+```
+kubectl get pvc
+```{{copy}}
 
 </details>

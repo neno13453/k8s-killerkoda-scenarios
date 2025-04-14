@@ -3,12 +3,15 @@ Now that we've created a PersistentVolume and a PersistentVolumeClaim, we're rea
 Create a pod named `pvc-user` in namespace `default` that mounts your PVC `my-claim` under `/mnt/share/my-pvc`. Use the image `nginx`.
 
 <br>
+<details><summary>Hint:</summary>
+<br>
+A good starting point: https://kubernetes.io/docs/tasks/configure-pod-container/configure-persistent-volume-storage/#create-a-pod
+</details>
+
+<br>
 <details><summary>Solution</summary>
 <br>
-This is another one where starting with an from the K8s docs and modifying it for our use case is a good strategy.
-
-A good starting example: https://kubernetes.io/docs/tasks/configure-pod-container/configure-persistent-volume-storage/#create-a-pod
-
+Execute command below to create pod with mount point to `my-claim` PVC
 ```plain
 kubectl apply -f - <<EOF
 
@@ -29,6 +32,12 @@ spec:
           name: my-claim
 
 EOF
-```{{exec}}
+```{{copy}}
+
+Make sure that Pod is in `Running` state and mount the `my-claim` PVC
+```
+kubectl get po
+kubectl describe po <pod name>
+```{{copy}}
 
 </details>

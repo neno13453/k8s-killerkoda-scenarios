@@ -1,10 +1,10 @@
 #!/bin/bash
 
-kubectl get persistentvolume cool-volume
+kubectl get persistentvolume my-volume
 
-SIZE=$(kubectl get persistentvolume cool-volume -o json | jq -r .spec.capacity.storage)
-HOSTPATH=$(kubectl get persistentvolume cool-volume -o json | jq -r .spec.hostPath.path)
-CLASS=$(kubectl get persistentvolume cool-volume -o json | jq -r .spec.storageClassName)
+SIZE=$(kubectl get persistentvolume my-volume -o json | jq -r .spec.capacity.storage)
+HOSTPATH=$(kubectl get persistentvolume my-volume -o json | jq -r .spec.hostPath.path)
+CLASS=$(kubectl get persistentvolume my-volume -o json | jq -r .spec.storageClassName)
 
 if [[ $SIZE = "100Mi" && $HOSTPATH = "/tmp/my-cool-vol" && $CLASS = "manual" ]]; then
     exit 0

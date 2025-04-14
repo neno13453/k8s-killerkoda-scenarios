@@ -6,19 +6,33 @@ Restart/Recreate the container
 
 Look under `/mnt/share/my-pvc` is `coolfile` still there?
 
+<br>
+<details><summary>Hint:</summary>
+<br>
+you can use `exec` command to execute into pod's container
+```
+kubectl exec -it <pod name> -- bash
+```{{copy}}
+
+Terminate and re-create pod with `kubectl replace`. Note: -oyaml will create a yaml definition file from existing pod.
+```
+kubectl get po <pod name> -o yaml | kubectl replace -f - --force
+```{{copy}}
+</details>
+
 
 <br>
 <details><summary>Solution</summary>
 <br>
 
 ```plain
-k exec pvc-user -- touch /mnt/share/my-pvc/coolfile
+kubectl exec pvc-user -- touch /mnt/share/my-pvc/coolfile
 
-k get pod pvc-user -o yaml | kubectl replace -f - --force
+kubectl get pod pvc-user -o yaml | kubectl replace -f - --force
 
 sleep 5 # Wait for the pod to come back
 
-k exec pvc-user -- ls /mnt/share/my-pvc
-```{{exec}}
+kubectl exec pvc-user -- ls /mnt/share/my-pvc
+```{{copy}}
 
 </details>
