@@ -1,6 +1,6 @@
 #!/bin/bash
 
-count=$(kubectl get po | grep 1/1 | wc -l)
-if [ $count -ne 4]; then
-    a
-fi
+kubectl rollout status deploy backend --timeout=1s
+kubectl rollout status deploy frontend --timeout=1s
+kubectl rollout status deploy gateway --timeout=1s
+kubectl rollout status deploy proxy --timeout=1s

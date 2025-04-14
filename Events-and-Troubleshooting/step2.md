@@ -1,28 +1,32 @@
 
-> You can either use `docker` or `podman` CLI. 
+> Services need to run on all interfaces (like 0.0.0.0) and not just localhost.
 <br>
-> In Accenture laptop, "Docker" is not allow due to licensing. Therefore, you need to replace "docker" with "podman" command. Though, all of the command are exactly the same
+> Services need to be accessible via HTTP and **not** HTTPS.
 
-
-Create a new file `~/step2/Dockerfile` to build a container image from.
+Run Nginx on port 80 using Docker:
 
 ```
-FROM golang:1.23
-WORKDIR /src
-COPY main.go main.go
-RUN go build -o /bin/hello ./main.go
+docker run -p 80:80 nginx:alpine
+```{{exec}}
 
-FROM scratch
-COPY --from=0 /bin/hello /bin/hello #copy from previos stag
-CMD ["/bin/hello"]
-```{{copy}}
 
-Build Docker image:
-``` 
-docker build -t hello-go-multi-stage:v0.1 step2/
-```{{copy}}
+Or run it in background:
 
-Compare newly created Image and compare the size between normal build and multi-stages build
 ```
-docker images | grep hello-go
-```{{copy}}
+docker run -d -p 80:80 nginx:alpine
+```{{exec}}
+
+Now access Nginx using this link:
+
+[ACCESS NGINX]({{TRAFFIC_HOST1_80}})
+
+It's also possible to access ports using the top-right navigation in the terminal.
+Or we can display the link to that page:
+
+[ACCESS PORTS]({{TRAFFIC_SELECTOR}})
+
+It's also possible to generate access URLs in bash (foreground or background scripts) like this:
+
+```
+sed 's/PORT/80/g' /etc/killercoda/host
+```{{exec}}
