@@ -9,7 +9,10 @@ kubectl get po
 
 Then, try to fix the issue accordingly by editing deployment resources
 
-Hint: use below command to edit the existing resource
+<br>
+<details><summary>Hint: use below command to edit the existing resource</summary>
+<br>
 ```
 kubectl edit deploy <deployment name>
 ```{{copy}}
+</details>
