@@ -7,8 +7,6 @@ Make sure after creating the claim it shows up as `Bound`. If not, check to make
 <br>
 <details><summary>Hint:</summary>
 <br>
-A good starting point: 
-<br>
 https://kubernetes.io/docs/tasks/configure-pod-container/configure-persistent-volume-storage/#create-a-persistentvolumeclaim
 </details>
 
