@@ -11,7 +11,7 @@ Check `/tmp/my-cool-vol` on the host. Did K8s clean up the volume?
 <br>
 You can delete any resources in K8s using `kubectl delete <resource> <resource name>`
 For example:
-    kubectl delete pod mypod
+    `kubectl delete pod mypod`
 </details>
 
 <br>
@@ -24,7 +24,11 @@ kubectl delete pvc my-claim
 kubectl delete pv my-volume
 ```{{copy}}
 
-Did K8s Clean up the volume?
+Did K8s Clean up the volume? Run below command to validate
+
+```
+ls -l /tmp/my-cool-vol
+```{{copy}}
 No. By default, if you don't specify a `persistentVolumeReclaimPolicy` K8s defaults to Retain. Better safe than sorry!
 
 </details>

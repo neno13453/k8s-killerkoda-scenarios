@@ -10,11 +10,13 @@ Look under `/mnt/share/my-pvc` is `coolfile` still there?
 <details><summary>Hint:</summary>
 <br>
 you can use `exec` command to execute into pod's container
+
 ```
 kubectl exec -it <pod name> -- bash
 ```{{copy}}
 
 Terminate and re-create pod with `kubectl replace`. Note: -oyaml will create a yaml definition file from existing pod.
+
 ```
 kubectl get po <pod name> -o yaml | kubectl replace -f - --force
 ```{{copy}}

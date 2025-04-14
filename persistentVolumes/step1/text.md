@@ -13,6 +13,7 @@ Create a PersistentVolume named `my-volume` backed by a hostPath `/tmp/my-cool-v
 <details><summary>Hint:</summary>
 <br>
 One such example is here: 
+<br>
 https://kubernetes.io/docs/tasks/configure-pod-container/configure-persistent-volume-storage/#create-a-persistentvolume
 </details>
 
@@ -45,6 +46,7 @@ EOF
 
 <br>
 Validate that PV successfully created
+
 ```
 kubectl get pv
 ```{{copy}}

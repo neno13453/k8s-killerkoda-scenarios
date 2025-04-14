@@ -6,6 +6,7 @@ Create a pod named `pvc-user` in namespace `default` that mounts your PVC `my-cl
 <details><summary>Hint:</summary>
 <br>
 A good starting point: 
+<br>
 https://kubernetes.io/docs/tasks/configure-pod-container/configure-persistent-volume-storage/#create-a-pod
 </details>
 
@@ -13,6 +14,7 @@ https://kubernetes.io/docs/tasks/configure-pod-container/configure-persistent-vo
 <details><summary>Solution</summary>
 <br>
 Execute command below to create pod with mount point to `my-claim` PVC
+
 ```plain
 kubectl apply -f - <<EOF
 
@@ -36,6 +38,7 @@ EOF
 ```{{copy}}
 
 Make sure that Pod is in `Running` state and mount the `my-claim` PVC
+
 ```
 kubectl get po
 kubectl describe po <pod name>

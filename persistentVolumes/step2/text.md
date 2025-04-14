@@ -8,6 +8,7 @@ Make sure after creating the claim it shows up as `Bound`. If not, check to make
 <details><summary>Hint:</summary>
 <br>
 A good starting point: 
+<br>
 https://kubernetes.io/docs/tasks/configure-pod-container/configure-persistent-volume-storage/#create-a-persistentvolumeclaim
 </details>
 
@@ -15,6 +16,7 @@ https://kubernetes.io/docs/tasks/configure-pod-container/configure-persistent-vo
 <details><summary>Solution</summary>
 <br>
 Execute below command to create PersistentVolumeClaim(PVC)
+
 ```plain
 kubectl apply -f - <<EOF
 
@@ -34,6 +36,7 @@ EOF
 ```{{copy}}
 <br>
 Make sure that PVC is in `Bound` status
+
 ```
 kubectl get pvc
 ```{{copy}}
