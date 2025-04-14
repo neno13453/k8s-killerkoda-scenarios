@@ -5,7 +5,8 @@ Create a pod named `pvc-user` in namespace `default` that mounts your PVC `my-cl
 <br>
 <details><summary>Hint:</summary>
 <br>
-A good starting point: https://kubernetes.io/docs/tasks/configure-pod-container/configure-persistent-volume-storage/#create-a-pod
+A good starting point: 
+https://kubernetes.io/docs/tasks/configure-pod-container/configure-persistent-volume-storage/#create-a-pod
 </details>
 
 <br>
