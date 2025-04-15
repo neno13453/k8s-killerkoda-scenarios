@@ -13,7 +13,7 @@ helm install grafana grafana/grafana
 
 Try `kubectl get all` to see all of the Kubernetes resources deploy with Grafana via Helm
 
-Then start kubectl forward, so you will able to access the UI:
+Wait until pod is in running state, then start kubectl forward, so you will able to access the UI:
 
 ```plain
 kubectl port-forward --address 0.0.0.0 service/grafana 3000:80

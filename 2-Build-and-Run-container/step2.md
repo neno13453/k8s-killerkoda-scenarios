@@ -1,7 +1,7 @@
 
-> You can either use `docker` or `podman` CLI. 
+> We can either use `docker` or `podman` CLI. 
 <br>
-> In Accenture laptop, "Docker" is not allow due to licensing. Therefore, you need to replace "docker" with "podman" command. Though, all of the command are exactly the same
+> In Accenture laptop, "Docker" is not allow due to licensing, therefore, you need to replace "docker" with "podman" command. Though, all of the command are exactly the same and we will use `docker` command in the session
 
 
 Create a new file `~/step2/Dockerfile` to build a container image from.
