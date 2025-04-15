@@ -63,6 +63,8 @@ spec:
             command:
             - curl
             - google.com    # update this line to any valid hostname
+```{{copy}}
+
 Solution 4: Proxy pod got `ImagePullBackOff` due to image name is not exist in Docker registry. Therefore, we can just update the image name to `busybox` or any exist image name.
 
 ```
@@ -72,4 +74,4 @@ spec:
         imagePullPolicy: Always
         name: busybox           # updated with correct image name
 ```{{copy}}
-</details>
+</details>  
