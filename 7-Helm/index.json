@@ -4,7 +4,8 @@
   "details": {
     "steps": [
       {
-        "title": "Deploy Grafana with Helm"
+        "title": "Deploy Grafana with Helm",
+        "text": "step1.md"
       }
     ]
   },
