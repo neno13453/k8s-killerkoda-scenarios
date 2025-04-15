@@ -19,9 +19,11 @@ kubectl get deploy -A               # will see all of the deployment name inside
 
 
 <br>
+
 The flag `-A` allow you to view that specific resource( e.g. deploy, pod, secret, configmap etc.) in every namespace inside the cluster
 
 <br>
+
 `-owide` and `-oyaml` are powerful flags to be use along with `kubectl get` as well. `-owide` will provide more details of that specific resource. While, `-oyaml` will get the resource in **yaml** definition file, which you can use to investigate configuration issue or apply it anywhere else.
 
 ```

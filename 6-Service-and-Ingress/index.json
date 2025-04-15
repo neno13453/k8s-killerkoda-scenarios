@@ -1,6 +1,6 @@
 {
-  "title": "Network Traffic Kubernetes",
-  "description": "Access services running inside a Kubernetes environment",
+  "title": "Service and Ingress",
+  "description": "Explore Service and Ingress Usage",
   "details": {
     "intro": {
       "text": "intro.md"
