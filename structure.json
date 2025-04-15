@@ -1,7 +1,7 @@
 {
     "items": [
-      { "path": "1-Common-Kubectl-CLI" },
-      { "path": "2-Build-and-Run-container" },
+      { "path": "1-Build-and-Run-container" },
+      { "path": "2-Common-Kubectl-CLI" },
       { "path": "3-Deployment" },
       { "path": "4-Configmap-and-Secret" },
       { "path": "5-Volumes" },
