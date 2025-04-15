@@ -25,6 +25,7 @@ metadata:
   name: my-claim #changed
 spec:
   storageClassName: manual #important
+  volumeName: my-volume 
   accessModes:
     - ReadWriteOnce
   resources:
