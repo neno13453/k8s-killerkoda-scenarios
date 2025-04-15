@@ -29,8 +29,10 @@ helm install <release name> <application name>/<application name>
 helm repo add grafana https://grafana.github.io/helm-charts
 helm repo update
 helm install grafana grafana/grafana
-```
+```{{copy}}
 </details>
+
+<br>
 
 Try `kubectl get all` to see all of the Kubernetes resources deploy with Grafana via Helm
 
