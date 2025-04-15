@@ -5,7 +5,7 @@ https://kubernetes.io/docs/concepts/storage/volumes/#emptydir
 
 By default, `emptyDir` will using the node storage for temporary and release once the pod restart or delete. However, user need to be careful on disk usage, if too much it can cause `diskPressure` or simply mean disk full and will make node unhealthy.
 
-Create a deploy named `deploy-with-emptydir` using image `nginx` with size limit of `100Mi` in the `default` namespace.
+Create a deploy named `deploy-with-emptydir` using image `nginx` with `emptyDir` size limit of `100Mi` in the `default` namespace.
 
 <br>
 <details><summary>Solution</summary>
