@@ -53,10 +53,11 @@ kubectl expose deployment web-server --name web-server-service
 ```
 
 <br>
-Validate the created service
+Port-forward and access the service
 
 ```
-kubectl get service
+kubectl port-forward svc/web-server-service 80 &  
+curl 127.0.0.1:80
 ```{{copy}}
 
 </details>

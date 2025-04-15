@@ -9,7 +9,8 @@
       { 
         "title": "What is a Service?",
         "text": "step1/text.md",
-        "background": "background.sh"
+        "background": "background.sh",
+        "verify": "step1/verify.sh"
       },
       { 
         "title": "Create a Deployment",
