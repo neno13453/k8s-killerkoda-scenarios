@@ -9,6 +9,6 @@ Delete the deployment `my-first-deployment`.
 
 ```plain
 kubectl delete deployment my-first-deployment
-```{{exec}}
+```{{copy}}
 
 </details>

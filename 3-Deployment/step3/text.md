@@ -15,6 +15,6 @@ Since there are other Kubernetes resources that offer the same scaling mechanism
 kubectl scale deployment/my-first-deployment --replicas=2
 
 kubectl get deployment my-first-deployment
-```{{exec}}
+```{{copy}}
 
 </details>

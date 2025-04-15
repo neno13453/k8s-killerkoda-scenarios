@@ -13,6 +13,6 @@ Change the image `my-first-deployment` runs from `nginx:alpine` to `httpd:alpine
 kubectl set image deployment my-first-deployment nginx=httpd:alpine
 
 kubectl get deployment my-first-deployment
-```{{exec}}
+```{{copy}}
 
 </details>

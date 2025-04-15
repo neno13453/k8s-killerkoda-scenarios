@@ -15,6 +15,6 @@ Check to make sure the deployment is healthy.
 kubectl create deployment my-first-deployment --image=nginx:alpine
 
 kubectl get deployment my-first-deployment
-```{{exec}}
+```{{copy}}
 
 </details>
