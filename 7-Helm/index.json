@@ -1,0 +1,14 @@
+{
+  "title": "Helm",
+  "description": "Helm in action",
+  "details": {
+    "steps": [
+      {
+        "title": "Deploy Grafana with Helm"
+      }
+    ]
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-1node"
+  }
+}
