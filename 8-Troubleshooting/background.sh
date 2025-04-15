@@ -34,7 +34,7 @@ spec:
 EOF
 
 # create imagepullback 
-kubectl create deployment proxy --image=busyboxwithtypo
+kubectl create deployment proxy --image=nginxwithtypo
 
 # create pod that will crashloopback
 cat << EOF | kubectl apply -f -
