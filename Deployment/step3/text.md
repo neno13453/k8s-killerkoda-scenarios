@@ -12,9 +12,9 @@ Check to make sure all 2 replicas are ready.
 Since there are other Kubernetes resources that offer the same scaling mechanisms, it's important to make sure we're scaling a deployment.
 
 ```plain
-k scale deployment/my-first-deployment --replicas=2
+kubectl scale deployment/my-first-deployment --replicas=2
 
-k get deployment my-first-deployment
+kubectl get deployment my-first-deployment
 ```{{exec}}
 
 </details>

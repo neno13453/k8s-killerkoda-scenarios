@@ -8,7 +8,7 @@ Delete the deployment `my-first-deployment`.
 <br>
 
 ```plain
-k delete deployment my-first-deployment
+kubectl delete deployment my-first-deployment
 ```{{exec}}
 
 </details>

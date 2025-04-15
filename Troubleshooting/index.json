@@ -3,7 +3,8 @@
   "description": "",
   "details": {
     "intro": {
-      "background": "background.sh"
+      "background": "background.sh",
+      "foreground": "foreground.sh"
     },
     "steps": [
       {

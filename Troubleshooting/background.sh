@@ -61,7 +61,7 @@ spec:
           exec:
             command:
             - curl
-            - somedatabase
+            - somehostname
           initialDelaySeconds: 1
           periodSeconds: 1
 EOF
@@ -93,3 +93,6 @@ spec:
       - image: nginx
         name: frontend
 EOF
+
+sleep 30
+echo done > /tmp/background1
