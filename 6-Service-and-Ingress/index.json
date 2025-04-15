@@ -1,6 +1,6 @@
 {
-  "title": "Kubernetes Services Lab",
-  "description": "Learn how to expose applications using Kubernetes Services (ClusterIP, NodePort).",
+  "title": "Service and Ingress",
+  "description": "Learn how to expose application using Kubernetes Services (ClusterIP, NodePort) and Ingress.",
   "details": {
     "intro": {
         "text": "intro.md"
