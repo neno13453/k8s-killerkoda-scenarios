@@ -5,13 +5,7 @@ https://kubernetes.io/docs/concepts/storage/volumes/#emptydir
 
 By default, `emptyDir` will using the node storage for temporary and release once the pod restart or delete. However, user need to be careful on disk usage, if too much it can cause `diskPressure` or simply mean disk full and will make node unhealthy.
 
-Create a pod named `pod-with-emptydir` using image `nginx` with size limit of `100Mi` in the `default` namespace.
-
-<br>
-<details><summary>Hint:</summary>
-<br>
-
-</details>
+Create a deploy named `deploy-with-emptydir` using image `nginx` with size limit of `100Mi` in the `default` namespace.
 
 <br>
 <details><summary>Solution</summary>
@@ -21,30 +15,42 @@ Execute below command to create pod with temporary storage(emptyDir)
 ```plain
 kubectl apply -f - <<EOF
 
-apiVersion: v1
-kind: Pod
+apiVersion: apps/v1
+kind: Deployment
 metadata:
-  name: pod-with-emptydir
+  labels:
+    app: deploy-with-emptydir
+  name: deploy-with-emptydir
 spec:
-  containers:
-  - image: nginx
-    name: test-container
-    volumeMounts:
-    - mountPath: /cache
-      name: temp-volume
-  volumes:
-  - name: temp-volume
-    emptyDir:
-      sizeLimit: 100Mi
+  replicas: 1
+  selector:
+    matchLabels:
+      app: deploy-with-emptydir
+  template:
+    metadata:
+      labels:
+        app: deploy-with-emptydir
+    spec:
+      containers:
+      - image: nginx
+        name: nginx
+        volumeMounts:
+        - mountPath: /cache
+          name: temp-volume
+      volumes:
+      - name: temp-volume
+        emptyDir:
+          sizeLimit: 100Mi
 
 EOF
 ```{{copy}}
 
 <br>
-Validate that PV successfully created
+Validate that deplyoment successfully created and ready
 
 ```
-kubectl get pv
+kubectl get deploy
 ```{{copy}}
 
 </details>
+
