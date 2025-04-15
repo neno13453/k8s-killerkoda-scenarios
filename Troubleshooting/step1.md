@@ -49,7 +49,7 @@ spec:
     dnsPolicy: ClusterFirst
     nodeSelector:           # remove this line
         role: nonexist-node # remove this line
-```{{copy}}
+```
 
 Solution 3: The gateway is crashing due to livenessprobe configuration in the deployment config. It try to curl to unresolvable hostname, hence, we need to edit the deployment for gateway and update liveness probe curl target into any valida domain e.g. google.com
 
@@ -63,7 +63,7 @@ spec:
             command:
             - curl
             - google.com    # update this line to any valid hostname
-```{{copy}}
+```
 
 Solution 4: Proxy pod got `ImagePullBackOff` due to image name is not exist in Docker registry. Therefore, we can just update the image name to `busybox` or any exist image name.
 
@@ -73,5 +73,5 @@ spec:
       - image: busyboxwithtypo
         imagePullPolicy: Always
         name: busybox           # updated with correct image name
-```{{copy}}
+```
 </details>  

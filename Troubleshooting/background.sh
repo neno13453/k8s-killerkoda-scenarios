@@ -94,5 +94,5 @@ spec:
         name: frontend
 EOF
 
-sleep 30
+sleep 35
 echo done > /tmp/background1
