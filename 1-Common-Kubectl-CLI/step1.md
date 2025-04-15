@@ -1,7 +1,7 @@
 > Creating a Pod using `kubectl create`. You can type `kubectl create` to see list of options that can easily create,
 
 
-Let’s start by launching an `nginx` under web-server namespaceweb using a **Deployment** resource.
+Let’s start by launching an `nginx` under web-server **namespace** using a **Deployment** resource.
 
 First of, create the namespace - It's a good practice to separate resources into different namespace depending on workload or environment.
 
@@ -9,7 +9,7 @@ First of, create the namespace - It's a good practice to separate resources into
 kubectl create namespace web-server
 ```{{copy}}
 
-Then proceed to create the nginx deployment with below command - `-n` is a flag referring to target namespace that you want to apply.
+Then proceed to create the nginx deployment with below command `-n` is a flag referring to target namespace that you want to apply.
 
 ```
 kubectl create deployment nginx --image=nginx -n web-server

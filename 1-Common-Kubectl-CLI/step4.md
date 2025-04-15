@@ -10,6 +10,7 @@ kubectl delete secret <secret name>
 ```
 
 Let's get started with our lab clean up and delete resources that we just created
+
 ```
 kubectl delete secret database-secret -n web-server
 kubectl delete configmap my-config -n web-server
@@ -20,6 +21,7 @@ kubectl delete deployment dummy
 
 <br>
 Let's validate and make sure the all resource under `default` and `web-server` namespace has been removed
+
 ```
 kubectl get all                 # get all resource under default namespcace
 kubectl get all -n web-server   # get all resource under web-server namespcace

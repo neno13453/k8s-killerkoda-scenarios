@@ -7,7 +7,7 @@ Let's see some example:
 First, create some deployment under the **default** namespace. No `-n` flag apply
 
 ```
-kubectl create deployment dummy --image=alpine 
+kubectl create deployment dummy --image=nginx 
 ```{{copy}}
 
 Let's try to the existing deployment resources and observe the output
@@ -15,7 +15,7 @@ Let's try to the existing deployment resources and observe the output
 kubectl get deploy                  # will only see the dummy deployment we just apply
 kubectl get deploy -n web-server    # will only see nginx that we apply in previous section
 kubectl get deploy -A               # will see all of the deployment name inside the cluster
-```{{copy}}
+```
 
 
 <br>
