@@ -33,7 +33,7 @@ volumes:
     secret:
         defaultMode: 420
         optional: false
-        secretName: database-secret #update this line
+        secretName: database-secret     #updated this line to existing secret name
 ```
 Solution 2: The Frontend pod stuck as Pending state as it's using the non-exist target nodeselector. Therefore, it cannot schedule into any node. You can check the node labels by `kubectl get no --show-labels` and edit the deployment file to corresponding node or simply totally remove the nodeSelector section
 
@@ -63,9 +63,13 @@ spec:
             command:
             - curl
             - google.com    # update this line to any valid hostname
-Solution 4:
+Solution 4: Proxy pod got `ImagePullBackOff` due to image name is not exist in Docker registry. Therefore, we can just update the image name to `busybox` or any exist image name.
 
 ```
-kubectl edit deploy <deployment name>
+spec:
+    containers:
+      - image: busyboxwithtypo
+        imagePullPolicy: Always
+        name: busybox           # updated with correct image name
 ```{{copy}}
 </details>
