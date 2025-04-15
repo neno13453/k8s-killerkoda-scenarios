@@ -1,4 +1,4 @@
-# Welcome to kubectl Essentials Lab 🧪
+# Welcome to kubectl Essentials Lab
 
 In this scenario, you'll learn how to use core `kubectl` commands like:
 - `create`
