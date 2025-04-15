@@ -49,7 +49,7 @@ EOF
 OR
 
 
-kubectl expose deployment web-server --name web-server-service
+kubectl expose deployment web-server --name web-server-service --port 80 
 ```
 
 <br>

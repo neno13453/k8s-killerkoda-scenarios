@@ -31,3 +31,5 @@ kubectl get pod -n web-server
 kubectl get cm -n web-server
 kubectl get secret -n web-server
 ```{{copy}}
+
+Note: More hands-on related to deployment, secret and configmap will part of its own section
