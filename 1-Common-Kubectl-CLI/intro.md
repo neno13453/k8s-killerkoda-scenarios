@@ -7,6 +7,6 @@ In this scenario, you'll learn how to use core `kubectl` commands like:
 - `logs`
 - `delete`
 - `-A` (all namespaces)
-- `--namespace`
+- `-n, --namespace`
 
 Let’s dive in!

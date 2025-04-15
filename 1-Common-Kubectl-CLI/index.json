@@ -1,5 +1,5 @@
 {
-  "title": "kubectl Essentials Lab",
+  "title": "kubectl Essentials",
   "description": "Learn core kubectl commands every Kubernetes user must know.",
   "details": {
     "steps": [
@@ -20,8 +20,10 @@
           "text": "step4.md" 
       }
     ],
-    "intro": "intro.md",
-    "finish": "finish.md"
+    "intro": 
+        {"text": "intro.md"},
+    "finish": 
+        {"text": "finish.md"}
   }
 }
 
