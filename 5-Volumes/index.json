@@ -7,6 +7,15 @@
     },
     "steps": [
       {
+        "title": "Create a NonPersistent Volume",
+        "text": "nonpersistence1/text.md",
+        "verify": "nonpersistence1/verify.sh"
+      },
+      {
+        "title": "Explore a NonPersistent Volume",
+        "text": "nonpersistence2/text.md"
+      },
+      {
         "title": "Create a PersistentVolume",
         "text": "step1/text.md",
         "verify": "step1/verify.sh"
