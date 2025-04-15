@@ -25,7 +25,7 @@ metadata:
   name: my-claim #changed
 spec:
   storageClassName: manual #important
-  volumeName: my-volume 
+  volumeName: my-volume  # ensure to matched with Persistence Volume(PV)
   accessModes:
     - ReadWriteOnce
   resources:
