@@ -45,11 +45,9 @@ spec:
 
 EOF
 
-<br>
 
 OR
 
-<br>
 
 kubectl expose deployment web-server --name web-server-service
 ```
