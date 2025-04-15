@@ -1,16 +1,17 @@
 {
-  "title": "Service and Ingress",
-  "description": "Explore Service and Ingress Usage",
+  "title": "Kubernetes Services Lab",
+  "description": "Learn how to expose applications using Kubernetes Services (ClusterIP, NodePort).",
   "details": {
-    "intro": {
-      "text": "intro.md"
-    },
     "steps": [
-      {
-        "title": "Run Nginx and access default page",
-        "text": "step1.md"
-      }
-    ]
+      { "title": "What is a Service?", "text": "step1/text.md" },
+      { "title": "Create a Deployment", "text": "step2/text.md" },
+      { "title": "Create a ClusterIP Service", "text": "step3/text.md" },
+      { "title": "Access Pod via Service", "text": "step4/text.md" },
+      { "title": "Create a NodePort Service", "text": "step5/text.md" },
+      { "title": "Clean Up", "text": "step6/text.md" }
+    ],
+    "intro": "intro.md",
+    "finish": "finish.md"
   },
   "backend": {
     "imageid": "kubernetes-kubeadm-2nodes"
