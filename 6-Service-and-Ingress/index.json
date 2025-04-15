@@ -31,11 +31,7 @@
         "title": "Clean Up",
         "text": "step6/text.md" 
       }
-    ],
-    
-    "finish": {
-      "text": "finish.md"
-    }
+    ]
   },
   "backend": {
     "imageid": "kubernetes-kubeadm-2nodes"
