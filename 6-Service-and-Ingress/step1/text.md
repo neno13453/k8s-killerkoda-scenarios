@@ -1,28 +1,20 @@
 You have an existing deployment named `web-server` . Perform the following steps:
 
-1. Expose the `web-server` deployment internally within the cluster using a Service named `web-server-service` with service type `clusterIP` .
-2. Use `port-forward` on `nginx-service` service to access the UI of pod using the curl command with 127.0.0.1:80
+Expose the `web-server` deployment internally within the cluster using a Service named `web-server-service` with service type `clusterIP` .
+<br>
+Since the `ClusterIP` only accessible via internal connection within cluster(pod-to-pod). Try to access `web-server-service` via  `test-connection-pod` running in default namespace using curl command
+
+
 ```
-# & is to make port-forward running in background
-kubectl port-forward svc/<service name> <port of service> & 
-```{{copy}}
+kubectl exec -it test-connection-pod -- <your curl command>
+```
 
-<br>
-<details><summary>Hint:</summary>
-<br>
-
-https://kubernetes.io/docs/concepts/services-networking/service/#type-clusterip
-
-https://kubernetes.io/docs/reference/kubectl/generated/kubectl_port-forward/
-
-</details>
-
+The command allow you to execute inside the container inside the pod. 
 
 
 <br>
 <details><summary>Solution</summary>
 <br>
-Execute below command to create pod with temporary storage(emptyDir)
 
 ```plain
 kubectl apply -f - <<EOF
