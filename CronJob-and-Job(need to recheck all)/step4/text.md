@@ -1,11 +1,4 @@
 
----
-
-### `step4.md`: Simulate failure & retry
-
-```markdown
-# Step 4: Simulate Failure and Retry Behavior
-
 Let’s simulate a failing CronJob and configure retry behavior.
 
 📄 `manifests/cronjob-failure.yaml`:
@@ -26,3 +19,4 @@ spec:
             image: busybox
             command: ["sh", "-c", "exit 1"]
           restartPolicy: OnFailure
+```

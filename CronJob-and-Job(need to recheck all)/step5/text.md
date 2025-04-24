@@ -1,13 +1,4 @@
 
----
-
-### `step5.md`: Control concurrency & history
-
-```markdown
-# Step 5: Concurrency and Job History Management
-
-Let’s explore how to control concurrent jobs and manage job history.
-
 📄 `manifests/cronjob-advanced.yaml`:
 ```yaml
 apiVersion: batch/v1
@@ -28,3 +19,4 @@ spec:
             image: busybox
             command: ["sh", "-c", "echo Start $(date); sleep 90"]
           restartPolicy: OnFailure
+```
