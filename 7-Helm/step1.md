@@ -3,7 +3,7 @@
 <br>
 
 
-Deploy the whole Grafana application using Helm from repo https://grafana.github.io/helm-charts:
+Deploy a `grafana` application using Helm from repo `https://grafana.github.io/helm-charts` with release name `grafana` :
 
 <br>
 <details><summary>Hint:</summary>

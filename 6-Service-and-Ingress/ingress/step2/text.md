@@ -34,6 +34,8 @@ We can reach the NodePort *Service* via the K8s Node IP:
 <br>
 
 ```plain
+
+# node ip can be retrieve by "kubectl get no -owide"
 curl http://172.30.1.2:30080
 ```
 
