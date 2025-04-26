@@ -6,7 +6,7 @@
       { "path": "3-Deployment" },
       { "path": "4-Configmap-and-Secret" },
       { "path": "5-Volumes" },
-      { "path": "6-Service-and-Ingress" },
+      { "path": "Service-and-Ingress" },
       { "path": "7-Helm" },
       { "path": "8-Troubleshooting" }
     ]
