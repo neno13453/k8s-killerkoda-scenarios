@@ -14,15 +14,13 @@
       },
       { 
         "title": "Access ClusterIP using Port-forward",
-        "text": "step2/text.md" 
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
       },
       { 
         "title": "Expose service with NodePort",
-        "text": "step3/text.md" 
-      },
-      { 
-        "title": "Ingress in Action",
-        "text": "step4/text.md" 
+        "text": "step3/text.md",
+        "verify": "step3/verify.sh"
       }
     ]
   },
