@@ -7,34 +7,26 @@
     },
     "steps": [
       { 
-        "title": "What is a Service?",
+        "title": "Expose service with ClusterIP",
         "text": "step1/text.md",
         "background": "background.sh",
         "verify": "step1/verify.sh"
       },
       { 
-        "title": "Create a Deployment",
+        "title": "Access ClusterIP using Port-forward",
         "text": "step2/text.md" 
       },
       { 
-        "title": "Create a ClusterIP Service",
+        "title": "Expose service with NodePort",
         "text": "step3/text.md" 
       },
       { 
-        "title": "Access Pod via Service",
+        "title": "Ingress in Action",
         "text": "step4/text.md" 
-      },
-      { 
-        "title": "Create a NodePort Service",
-        "text": "step5/text.md" 
-      },
-      { 
-        "title": "Clean Up",
-        "text": "step6/text.md" 
       }
     ]
   },
   "backend": {
-    "imageid": "kubernetes-kubeadm-2nodes"
+    "imageid": "kubernetes-kubeadm-1node"
   }
 }
