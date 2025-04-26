@@ -1,0 +1,6 @@
+{
+    "items": [
+      { "path": "services" },
+      { "path": "ingress" }
+    ]
+  }
