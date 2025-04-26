@@ -6,6 +6,20 @@
       {
         "title": "Deploy Grafana with Helm",
         "text": "step1.md"
+      },
+      {
+        "title": "Make change by Helm upgrade",
+        "text": "step2.md"
+      },
+      {
+        "title": "Helm Rollback",
+        "text": "step3.md",
+        "verify": "verify-step3.sh"
+
+      },
+      {
+        "title": "Helm Uninstall",
+        "text": "step4.md"
       }
     ]
   },
