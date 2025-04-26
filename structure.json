@@ -1,5 +1,6 @@
 {
     "items": [
+      { "path": "0-K8s-Playground" },
       { "path": "1-Build-and-Run-container" },
       { "path": "2-Common-Kubectl-CLI" },
       { "path": "3-Deployment" },
