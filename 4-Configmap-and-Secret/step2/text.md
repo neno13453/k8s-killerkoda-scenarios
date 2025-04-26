@@ -29,6 +29,7 @@ kubectl exec -it <pod name> -- sh
 <br>
 
 ```plain
+kubectl apply -f /tmp/configmap.yaml
 kubectl apply -f - <<EOF
 apiVersion: v1
 kind: Pod
