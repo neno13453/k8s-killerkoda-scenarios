@@ -1,6 +1,6 @@
 {
   "title": "A Playground",
-  "description": "This playground has the Nginx Ingress Controller installed on Kubernetes",
+  "description": "This playground for Kubernetes",
   "details": {
     "finish": {
       "text": "finish.md"
