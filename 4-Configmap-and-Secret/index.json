@@ -8,14 +8,19 @@
     },
     "steps": [
       {
-        "title": "Create a ConfigMap",
+        "title": "Create a ConfigMap with key values",
         "text": "step1/text.md",
         "verify": "step1/verify.sh"
       },
       {
-        "title": "Mount ConfigMap to a pod",
+        "title": "Create a ConfigMap with file content",
         "text": "step2/text.md",
         "verify": "step2/verify.sh"
+      },
+      {
+        "title": "Mount ConfigMap to a pod",
+        "text": "step3/text.md",
+        "verify": "step3/verify.sh"
       }
     ],
     "finish": {

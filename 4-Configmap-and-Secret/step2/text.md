@@ -1,11 +1,8 @@
-1. Create a configmap from path `/tmp/configmap.yaml`
-2. Create a pod named `pod1` of image `nginx:alpine`
-2. Make key `color` of ConfigMap `oak` available as environment variable `TREE_COLOR`
-4. Check environment variable `TREE_COLOR` by access in the running Pod
 
-Docs:
-https://kubernetes.io/docs/tasks/configure-pod-container/configure-pod-configmap/#define-container-environment-variables-with-data-from-multiple-configmaps
 
+Create a ConfigMap named `web-page` that contain file `/tmp/home.html`
+
+https://kubernetes.io/docs/concepts/configuration/configmap/
 
 
 <br>
@@ -13,12 +10,7 @@ https://kubernetes.io/docs/tasks/configure-pod-container/configure-pod-configmap
 <br>
 
 ```plain
-
-# Apply yaml file from
-kubectl apply -f
-
-# Access pod
-kubectl exec -it <pod name> -- sh
+kubectl create configmap -h
 ```
 
 </details>
@@ -29,25 +21,30 @@ kubectl exec -it <pod name> -- sh
 <br>
 
 ```plain
-kubectl apply -f /tmp/configmap.yaml
 kubectl apply -f - <<EOF
 apiVersion: v1
-kind: Pod
+data:
+  home.html: |
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <title>My Simple Page</title>
+    </head>
+    <body>
+      <h1>Hello, World!</h1>
+      <p>This is a simple HTML page.</p>
+    </body>
+    </html>
+kind: ConfigMap
 metadata:
-  name: pod1
-spec:
-  containers:
-  - image: nginx:alpine
-    name: pod1
-    env:
-      - name: TREE_COLOR
-        valueFrom:
-          configMapKeyRef:
-            name: oak
-            key: color
+  creationTimestamp: null
+  name: web-page
 
 EOF
 
+OR
+
+kubectl create configmap web-page --from-file /tmp/home.html
 ```
 
 </details>

@@ -11,7 +11,7 @@ First: create ClusterIP *Services* for both *Deployments* for port `80`. The *Se
 <br>
 
 ```plain
-k expose deploy -h
+kubectl expose deploy -h
 ```
 
 </details>
@@ -23,8 +23,8 @@ k expose deploy -h
 <br>
 
 ```plain
-k -n world expose deploy europe --port 80
-k -n world expose deploy asia --port 80
+kubectl -n world expose deploy europe --port 80
+kubectl -n world expose deploy asia --port 80
 ```
 
 </details>

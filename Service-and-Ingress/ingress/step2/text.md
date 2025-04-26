@@ -24,7 +24,7 @@ and
 Check the NodePort *Service* for the Nginx Ingress Controller to see the ports
 
 ```plain
-k -n ingress-nginx get svc ingress-nginx-controller
+kubectl -n ingress-nginx get svc ingress-nginx-controller
 ```
 
 <br>
