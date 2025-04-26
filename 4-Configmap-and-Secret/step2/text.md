@@ -1,5 +1,5 @@
-1. Create a pod named `pod1` of image `nginx:alpine`
-2. Create a configmap from path `/tmp/configmap.yaml`
+1. Create a configmap from path `/tmp/configmap.yaml`
+2. Create a pod named `pod1` of image `nginx:alpine`
 2. Make key `color` of ConfigMap `oak` available as environment variable `TREE_COLOR`
 4. Check environment variable `TREE_COLOR` by access in the running Pod
 
@@ -22,9 +22,6 @@ kubectl exec -it <pod name> -- sh
 ```
 
 </details>
-
-
-
 
 
 <br>

@@ -1,6 +1,6 @@
 > A ConfigMap is an API object used to store non-confidential data in key-value pairs. Pods can consume ConfigMaps as environment variables, command-line arguments, or as configuration files in a volume.
 
-Create a ConfigMap named `someendpoint` with content `endpoint1=google.com` and `endpoint2=accenture.com`
+Create a ConfigMap named `someendpoint` with keys `endpoint1=google.com` and `endpoint2=accenture.com`
 
 
 
@@ -13,7 +13,7 @@ https://kubernetes.io/docs/concepts/configuration/configmap/
 
 OR
 
-kubectl create cm trauerweide -h
+kubectl create configmap -h
 ```
 
 </details>
