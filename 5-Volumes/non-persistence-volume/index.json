@@ -1,0 +1,26 @@
+{
+  "title": "Non-Persistence Volumes",
+  "description": "Learn to work with non persistence volume",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "Create a NonPersistent Volume",
+        "text": "step1/text.md",
+        "verify": "nonpersistence1/verify.sh"
+      },
+      {
+        "title": "Explore a NonPersistent Volume",
+        "text": "step2/text.md"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-1node"
+  }
+}

@@ -1,20 +1,11 @@
 {
-  "title": "Volumes",
-  "description": "Learn to work with volumes",
+  "title": "Persistence Volume",
+  "description": "Learn to work with persistence volume",
   "details": {
     "intro": {
       "text": "intro.md"
     },
     "steps": [
-      {
-        "title": "Create a NonPersistent Volume",
-        "text": "nonpersistence1/text.md",
-        "verify": "nonpersistence1/verify.sh"
-      },
-      {
-        "title": "Explore a NonPersistent Volume",
-        "text": "nonpersistence2/text.md"
-      },
       {
         "title": "Create a PersistentVolume",
         "text": "step1/text.md",
