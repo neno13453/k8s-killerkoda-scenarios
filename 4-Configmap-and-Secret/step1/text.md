@@ -4,9 +4,6 @@ Create a ConfigMap named `someendpoint` with content `endpoint1=google.com` and 
 
 
 
-
-
-
 <br>
 <details><summary>Tip</summary>
 <br>
