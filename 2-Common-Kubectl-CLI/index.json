@@ -21,9 +21,14 @@
       }
     ],
     "intro": 
-        {"text": "intro.md"},
+      {
+          "text": "intro.md",
+          "background": "background.sh"
+      },
     "finish": 
-        {"text": "finish.md"}
+      {
+        "text": "finish.md"
+      }
   },
   "backend": {
     "imageid": "kubernetes-kubeadm-1node"

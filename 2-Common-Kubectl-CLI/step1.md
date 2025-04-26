@@ -3,10 +3,10 @@
 
 Let’s start by launching an `nginx` under web-server **namespace** using a **Deployment** resource.
 
-First of, create the namespace - It's a good practice to separate resources into different namespace depending on workload or environment.
+First of, create the namespace from yaml file at `/tmp/namespace.yaml` - It's a good practice to separate resources into different namespace depending on workload or environment.
 
 ```
-kubectl create namespace web-server
+kubectl apply -f /tmp/namespace.yaml
 ```{{copy}}
 
 Then proceed to create the nginx deployment with below command `-n` is a flag referring to target namespace that you want to apply.
