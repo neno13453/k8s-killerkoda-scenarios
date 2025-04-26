@@ -6,10 +6,10 @@ Since the `ClusterIP` only accessible via internal connection within cluster(pod
 
 
 ```
-kubectl exec -it test-connection-pod -- <your curl command>
+kubectl exec -it test-connection-pod -- curl <service name>
 ```
 
-The command allow you to execute inside the container inside the pod. 
+The command allow you to execute command inside the container inside the pod. 
 
 
 <br>
@@ -45,11 +45,11 @@ kubectl expose deployment web-server --name web-server-service --port 80
 ```
 
 <br>
-Port-forward and access the service
 
 ```
-kubectl port-forward svc/web-server-service 80 &  
-curl 127.0.0.1:80
-```{{copy}}
+
+# Run command to execute CLI inside the pod
+kubectl exec -it test-connection-pod -- curl web-server-service
+```
 
 </details>
