@@ -10,10 +10,16 @@ helm upgrade -h
 
 </details>
 
+<br>
 
-```
+<details><summary>Solution</summary>
+<br>
+
+```plain
 helm upgrade --install grafana grafana/grafana --set image.tag=xxxx
-
 ```
 
+</details>
+
+<br>
 You will notice that pod is crashing

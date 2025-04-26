@@ -5,7 +5,6 @@ Now let's uninstall the `grafana` to clean up the environment using `helm` CLI
 Once uninstalled, please confirm that all resource have been removed
 
 ```
-
 helm ls
 kubectl get all
 ```
@@ -15,9 +14,7 @@ kubectl get all
 <br>
 
 ```plain
-
 helm uninstall grafana
-
 ```
 
 </details>
