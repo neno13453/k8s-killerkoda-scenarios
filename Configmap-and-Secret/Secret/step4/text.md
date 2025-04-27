@@ -1,7 +1,7 @@
 > A Secret is an object that contains a small amount of sensitive data such as a password, a token, or a key. However, by default, Kubernetes secret only **encode** the values and **don't have any encryption**
 
 1. Create a Secret named `creditcard` with content `cardnumber=12345678` and `pin=1234`
-2. Create Secret name `token` by apply `/tmp/secret.yaml`
+2. Create Secret name `token` by apply existing yaml file at `/tmp/secret.yaml`
 3. Save encoded secret value from `creditcard` into `/tmp/answer1`
 4. Save decoded secret value from `token` into `/tmp/answer2`
 
