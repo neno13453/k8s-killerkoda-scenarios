@@ -1,3 +1,4 @@
 #!/bin/bash
 
-kubectl get pod my-pod
+kubectl get configmap web-page
+kubectl get cm web-page -oyaml | grep "home.html: |"
