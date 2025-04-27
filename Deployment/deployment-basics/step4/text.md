@@ -1,6 +1,6 @@
 Deployments also offer the ability to gracefully update an application(only applicable with small system). Kubernetes offers multiple rollout strategies, but the default is `rollingUpdate`.
 
-https://kubernetes.io/docs/concepts/workloads/controllers/deployment/#scaling-a-deployment
+https://kubernetes.io/docs/concepts/workloads/controllers/deployment/#proportional-scaling
 
 Change the image `my-first-deployment` runs from `nginx:alpine` to `httpd:alpine`.
 
