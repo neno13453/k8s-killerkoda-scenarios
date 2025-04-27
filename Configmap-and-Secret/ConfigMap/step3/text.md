@@ -50,4 +50,9 @@ EOF
 
 ```
 
+```
+kubectl exec -it pod1 -- sh
+  echo $TREE_COLOR
+```
+
 </details>
