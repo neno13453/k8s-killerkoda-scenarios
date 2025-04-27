@@ -48,7 +48,7 @@ kubectl apply -f /tmp/secret.yaml
 kubectl get secret token -oyaml
 
 echo "MTIzNA==" >  /tmp/answer1 
-echo "MTIzNDU2Nzg=" >  /tmp/answer1 
+echo "MTIzNDU2Nzg=" >>  /tmp/answer1 
 echo "a8FbGk3LmN7XpTqZ" >  /tmp/answer2 
 
 EOF
