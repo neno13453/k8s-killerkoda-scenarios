@@ -1,6 +1,5 @@
 {
     "items": [
-      { "path": "ConfigMap" },
-      { "path": "Secret" }
+      { "path": "ConfigMap" }
     ]
   }
