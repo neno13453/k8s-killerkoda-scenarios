@@ -1,7 +1,7 @@
 
 Let’s simulate a failing CronJob and configure retry behavior.
 
-📄 `manifests/cronjob-failure.yaml`:
+`manifests/cronjob-failure.yaml`:
 ```yaml
 apiVersion: batch/v1
 kind: CronJob

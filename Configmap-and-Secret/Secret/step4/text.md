@@ -16,12 +16,14 @@ https://kubernetes.io/docs/concepts/configuration/secret/#uses-for-secrets
 <br>
 
 ```plain
+# Create secret
+kubectl create secret -h
 
 # Apply yaml file from
 kubectl apply -f
 
 # To base64 decode
-echo "something" | base64 -d 
+echo "some encode value" | base64 -d 
 
 # Create and write into a file
 echo "something" > <path to a file>
