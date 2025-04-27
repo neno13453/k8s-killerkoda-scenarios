@@ -2,8 +2,8 @@
 
 1. Create a Secret named `creditcard` with content `cardnumber=12345678` and `pin=1234`
 2. Create Secret name `token` by apply existing yaml file at `/tmp/secret.yaml`
-3. Save encoded secret value from `creditcard` into `/tmp/answer1`
-4. Save decoded secret value from `token` into `/tmp/answer2`
+3. Retrieve value from `creditcard` and save the encoded value into `/tmp/answer1`
+4. Retrieve value from `token`, then save the decoded into `/tmp/answer2`
 
 
 
@@ -40,13 +40,16 @@ echo "something" >> <path to a file>
 <br>
 
 ```plain
-kubectl create secret generic token --from-literal=cardnumber=12345678 --from-literal=pin=1234
+kubectl create secret generic creditcard --from-literal=cardnumber=12345678 --from-literal=pin=1234
 
 kubectl apply -f /tmp/secret.yaml
 
+# Check values inside secret
+kubectl get secret token -oyaml
+
 echo "MTIzNA==" >  /tmp/answer1 
 echo "MTIzNDU2Nzg=" >  /tmp/answer1 
-echo "YThGYkdrM0xtTjdYcFRxWg==" >  /tmp/answer2 
+echo "a8FbGk3LmN7XpTqZ" >  /tmp/answer2 
 
 EOF
 
