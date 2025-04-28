@@ -14,7 +14,7 @@ kubectl exec -it test-connection-pod -- curl <service name>
 <br>
 
 ```plain
-https://kubernetes.io/docs/concepts/services-networking/service/
+For referenece, https://kubernetes.io/docs/concepts/services-networking/service/. Need to make sure selector is matched with deployment
 ```
 
 </details>
