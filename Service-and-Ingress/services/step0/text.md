@@ -1,6 +1,6 @@
 You have an existing deployment named `web-server` . Perform the following steps:
 
-Expose the `web-server` deployment internally within the cluster using a Service named `web-server-service` with service type `clusterIP` .
+Expose the `web-server` deployment internally within the cluster using a Service named `web-server-service` with service type `clusterIP` and port `80` .
 <br>
 Since the `ClusterIP` only accessible via internal connection within cluster(pod-to-pod). Try to access `web-server-service` via  `test-connection-pod` running in default namespace using curl command
 
@@ -8,6 +8,17 @@ Since the `ClusterIP` only accessible via internal connection within cluster(pod
 ```
 kubectl exec -it test-connection-pod -- curl <service name>
 ```
+
+<br>
+<details><summary>Tip</summary>
+<br>
+
+```plain
+https://kubernetes.io/docs/concepts/services-networking/service/
+```
+
+</details>
+
 
 The command allow you to execute command inside the container inside the pod. 
 
