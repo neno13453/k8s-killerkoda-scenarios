@@ -26,6 +26,7 @@ Port-forward and access the service
 
 ```
 kubectl port-forward svc/web-server-service 80 &  
+sleep 3
 curl 127.0.0.1:80
 ```{{copy}}
 
