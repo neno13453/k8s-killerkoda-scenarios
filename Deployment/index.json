@@ -28,8 +28,7 @@
       },
       {
         "title": "Set Resource for a deployment",
-        "text": "step5/text.md",
-        "verify": "step5/verify.sh"
+        "text": "step5/text.md"
       },
       {
         "title": "Delete a deployment",
