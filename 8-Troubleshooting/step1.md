@@ -70,8 +70,8 @@ Solution 4: Proxy pod got `ImagePullBackOff` due to image name is not exist in D
 ```
 spec:
     containers:
-      - image: nginxwithtypo
+      - image: nginxwithtypo # updated with correct image name
         imagePullPolicy: Always
-        name: nginx           # updated with correct image name
+        name: nginx           
 ```
 </details>  
