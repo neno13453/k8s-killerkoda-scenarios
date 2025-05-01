@@ -1,13 +1,13 @@
 {
     "items": [
-      { "path": "0-K8s-Playground" },
-      { "path": "1-Build-and-Run-container" },
-      { "path": "2-Common-Kubectl-CLI" },
+      { "path": "K8s-Playground" },
+      { "path": "Build-and-Run-container" },
+      { "path": "Common-Kubectl-CLI" },
       { "path": "Deployment" },
       { "path": "Configmap-and-Secret" },
       { "path": "Volumes" },
       { "path": "Service-and-Ingress" },
-      { "path": "7-Helm" },
-      { "path": "8-Troubleshooting" }
+      { "path": "Helm" },
+      { "path": "Troubleshooting" }
     ]
   }
