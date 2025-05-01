@@ -1,0 +1,30 @@
+{
+  "title": "Service and Ingress",
+  "description": "Learn how to expose application using Kubernetes Services (ClusterIP, NodePort) and Ingress.",
+  "details": {
+    "intro": {
+        "text": "intro.md"
+    },
+    "steps": [
+      { 
+        "title": "Expose service with ClusterIP",
+        "text": "step1/text.md",
+        "background": "background.sh",
+        "verify": "step1/verify.sh"
+      },
+      { 
+        "title": "Access ClusterIP using Port-forward",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
+      },
+      { 
+        "title": "Expose service with NodePort",
+        "text": "step3/text.md",
+        "verify": "step3/verify.sh"
+      }
+    ]
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-1node"
+  }
+}

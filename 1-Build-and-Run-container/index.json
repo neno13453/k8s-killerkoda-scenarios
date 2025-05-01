@@ -1,0 +1,25 @@
+{
+  "title": "Docker Image",
+  "description": "Build and Run container",
+  "details": {
+    "intro": {
+      "background": "background.sh"
+    },
+    "steps": [
+      {
+        "title": "Build Docker Image",
+        "text": "step1.md",
+        "verify": "verify1.sh"
+      },
+      {
+        "title": "Build Multi-Stages Docker Image",
+        "text": "step2.md",
+        "verify": "verify2.sh"
+      }
+
+    ]
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}

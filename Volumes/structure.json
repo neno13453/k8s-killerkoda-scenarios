@@ -1,0 +1,6 @@
+{
+    "items": [
+      { "path": "non-persistence-volume" },
+      { "path": "persistence-volume" }
+    ]
+  }

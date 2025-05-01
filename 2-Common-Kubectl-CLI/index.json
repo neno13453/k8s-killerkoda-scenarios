@@ -1,0 +1,37 @@
+{
+  "title": "kubectl Basics",
+  "description": "Learn core kubectl commands every Kubernetes user must know.",
+  "details": {
+    "steps": [
+      { 
+          "title": "Creating a Pod", 
+          "text": "step1.md" 
+      },
+      { 
+          "title": "Viewing Resources", 
+          "text": "step2.md" 
+      },
+      { 
+          "title": "Inspecting and Debugging", 
+          "text": "step3.md" 
+      },
+      { 
+          "title": "Cleaning Up", 
+          "text": "step4.md" 
+      }
+    ],
+    "intro": 
+      {
+          "text": "intro.md",
+          "background": "background.sh"
+      },
+    "finish": 
+      {
+        "text": "finish.md"
+      }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-1node"
+  }
+}
+

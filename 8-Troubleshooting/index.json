@@ -1,0 +1,21 @@
+{
+  "title": "Troubleshooting",
+  "description": "",
+  "details": {
+    "intro": {
+      "background": "background.sh",
+      "foreground": "foreground.sh"
+    },
+    "steps": [
+      {
+        "title": "Troubleshooting different type of issue on deployment",
+        "text": "step1.md",
+        "verify": "verify.sh"
+      }
+
+    ]
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-1node"
+  }
+}
