@@ -1,4 +1,4 @@
-> Creating a Pod using `kubectl create`. You can type `kubectl create` to see list of options that can easily create,
+> Creating a Pod using `kubectl create`. You can type `kubectl create -h` to see list of options that can easily create,
 
 
 Let’s start by launching an `nginx` under web-server **namespace** using a **Deployment** resource.
